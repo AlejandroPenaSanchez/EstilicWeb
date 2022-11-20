@@ -20,4 +20,4 @@ he creado un proyecto de github donde hay un tablero con tareas al cual todos po
   #### Admin Listado publicaciones
   ![Admin-Listado-Publicaciones](https://user-images.githubusercontent.com/22495640/202928684-3b81ab40-c3b7-406b-947c-a5d7b75bbbe9.png)
   #### Admin Nueva publicacion
-  ![Admin-Nueva-publicacion](https://user-images.githubusercontent.com/22495640/202928687-bd4e1190-676e-4011-88c8-6812c7fbc8e4.png)
+  ![Admin-Nueva-publicacion](https://user-images.githubusercontent.com/22495640/202929359-8a954646-15f5-4972-ad20-871f86a5cd39.png)
