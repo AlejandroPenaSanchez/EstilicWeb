@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.25rem;
   color: #727272;
 }
+.post p {
+  /* text-indent: 2rem; */
+  text-align: justify;
+}
 
 /*
  * Footer
