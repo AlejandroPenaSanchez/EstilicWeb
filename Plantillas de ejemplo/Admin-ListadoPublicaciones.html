@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Alejandro Pena Sanchez">
+    <title>Club Estilic</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="./admin.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <img class="mb-2 mt-2 mx-2" src="./img/logo_Estilic-2.jpg" alt="" width="100" height="80">   
+      <div class="navbar-nav mx-4">
+        <div class="nav-item text-nowrap">
+          <button type="button" class="btn btn-danger">Salir</button>
+        </div>
+      </div>   
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="position-sticky pt-3 sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span data-feather="home" class="align-text-bottom"></span>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="plus-circle" class="align-text-bottom"></span>
+                  Añadir publicación
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="layers" class="align-text-bottom"></span>
+                  Listado de publicaciones
+                </a>
+              </li>
+            </ul>        
+          </div>
+        </nav>
+    
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Listado de publicaciones</h1>
+            <form>
+              <div class="row">
+                <div class="col-3">
+                  <button type="submit" class="btn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                  </button>
+                </div>
+                <div class="col-9">
+                  <input type="text" id="buscador" class="form-control" placeholder="Buscar publicación">
+                </div>
+              </div>
+            </form>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <h6>Pagina 1 de 3</h6>
+            </div>
+          </div>
+    <!--
+          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
+    
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Nombre Publicación</th>
+                  <th scope="col">Autor</th>
+                  <th scope="col">Visitas</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Titulo Ejemplo 1</td>
+                  <td>Admin</td>
+                  <td>50</td>
+                  <td>
+                    <button type="button" class="btn btn-primary"><i data-feather="eye"></i></button>
+                    <button type="button" class="btn btn-success"><i data-feather="edit"></i></button>
+                    <button type="button" class="btn btn-danger"><i data-feather="trash-2"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Titulo Ejemplo 2</td>
+                  <td>Admin</td>
+                  <td>200</td>
+                  <td>
+                    <button type="button" class="btn btn-primary"><i data-feather="eye"></i></button>
+                    <button type="button" class="btn btn-success"><i data-feather="edit"></i></button>
+                    <button type="button" class="btn btn-danger"><i data-feather="trash-2"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Titulo Ejemplo 3</td>
+                  <td>Admin</td>
+                  <td>100</td>
+                  <td>
+                    <button type="button" class="btn btn-primary"><i data-feather="eye"></i></button>
+                    <button type="button" class="btn btn-success"><i data-feather="edit"></i></button>
+                    <button type="button" class="btn btn-danger"><i data-feather="trash-2"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+      </div>
+    </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+  <script src="./admin.js"></script>
+  </body>
+</html>
