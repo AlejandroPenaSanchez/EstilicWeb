@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Alejandro Pena Sanchez">
+    <title>Club Estilic</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="./admin.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <img class="mb-2 mt-2 mx-2" src="./img/logo_Estilic-2.jpg" alt="" width="100" height="80">   
+      <div class="navbar-nav mx-4">
+        <div class="nav-item text-nowrap">
+          <button type="button" class="btn btn-danger">Salir</button>
+        </div>
+      </div>   
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="position-sticky pt-3 sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span data-feather="home" class="align-text-bottom"></span>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="plus-circle" class="align-text-bottom"></span>
+                  Añadir publicación
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="layers" class="align-text-bottom"></span>
+                  Listado de publicaciones
+                </a>
+              </li>
+            </ul>        
+          </div>
+        </nav>
+    
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Nueva Publicacion / editar publicacion</h1>
+            <div class="nav-item text-nowrap">
+              <button type="button" class="btn btn-success">Guardar</button>
+            </div>
+          </div>
+          <div id="editorjs"></div>
+        </main>
+      </div>
+    </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+  <script src="./admin.js"></script>
+  <script src="./editor.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/simple-image@latest"></script>
+  <script>
+    var editor = new EditorJS({
+      holder: 'editorjs',
+      tools: {
+        image: SimpleImage
+      }
+      });
+  </script>
+  </body>
+</html>
